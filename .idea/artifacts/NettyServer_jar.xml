@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NettyServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NettyServer_jar</output-path>
+    <root id="archive" name="NettyServer.jar">
+      <element id="module-output" name="NettyServer" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/SimpleNetty.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
