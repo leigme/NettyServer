@@ -58,26 +58,6 @@ public class MyServiceMessage implements MessageListener {
             }
         }
 
-//        String msg = new String(nettyMessage.getData());
-//        String[] msgs = msg.split("%");
-//        if (2 == msgs.length) {
-//            if (DefConf.RECEIVE_ALL.equals(msgs[0])) {
-//                for (Map.Entry<String, ChannelHandlerContext> entry : mContextMap.entrySet()) {
-//                    if (!senderId.equals(entry.getKey())) {
-//                        mNettyMessage = new NettyMessage(senderId, receiveId, 3,
-//                                msgs[1].getBytes());
-//                        entry.getValue().writeAndFlush(mNettyMessage);
-//                    }
-//                }
-//            }
-//        } else {
-//            ChannelHandlerContext ctx = mContextMap.get(receiveId);
-//            if (null != ctx) {
-//                mNettyMessage = new NettyMessage(senderId, receiveId, 3,
-//                        nettyMessage.getData());
-//                ctx.writeAndFlush(mNettyMessage);
-//            }
-//        }
         log.info("[" + senderId + "]对[" + receiveId + "]说了{" + new String
                 (nettyMessage.getData
                 ()) + "}");
